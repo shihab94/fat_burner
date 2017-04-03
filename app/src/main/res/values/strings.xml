@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Fat Burner</string>
+    <string name="start_workout">Start Workout</string>
+    <string name="intro">
+        Extra fat is annoying.This app will help you to burn extra fat of you body.
+        Our workout length is only 10 minutes.Each set of workout is 2 minutes long.
+        So 5 sets * 2 minutes = 10 minutes workout.Let\'s see the workout procedure.
+    </string>
+    <string name="jumping">Start with 10 seconds jumping.A little movement before any workout is very essential.</string>
+    <string name="push_up">
+        Now it\'s time to start the main workout.Do push-up for 20 seconds.After
+        20 seconds push up relax or do jumping for 10 secs.
+    </string>
+    <string name="squats">
+        Do some deep squats for 20 seconds.
+    </string>
+    <string name="burpees">
+        Do some burpees for 20 seconds.
+    </string>
+    <string name="planks">
+        Do some planks for 20 seconds.
+    </string>
+    <string name="conclusion">Our 2 minutes first set is completed.Now repeat this procedure for 4 more times.</string>
+</resources>

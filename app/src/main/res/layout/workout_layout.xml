@@ -3,13 +3,15 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ImageView
+    <!--For using GifImageView i had to add dependency: compile 'pl.droidsonroids.gif:android-gif-drawable:1.1.+'-->
+
+    <pl.droidsonroids.gif.GifImageView
         android:id="@+id/workout"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_marginTop="20dp"
         android:layout_gravity="center_horizontal"
-        android:src="@drawable/jumping"/>
+        android:src="@drawable/jumping" />
 
     <TextView
         android:id="@+id/clock"

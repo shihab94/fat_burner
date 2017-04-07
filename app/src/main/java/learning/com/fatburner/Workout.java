@@ -9,9 +9,11 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import pl.droidsonroids.gif.GifImageView;
+
 
 public class Workout extends Activity {
-    private ImageView workout;
+    private GifImageView workout;
     private boolean FIRST_TIME_LAUNCHED = false;
     private int seconds = 0;
     int count = 0, temp = 0;
@@ -22,7 +24,7 @@ public class Workout extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.workout_layout);
-        workout = (ImageView) findViewById(R.id.workout);
+        workout = (GifImageView) findViewById(R.id.workout);
         //mp =  MediaPlayer.create(getApplicationContext(),R.raw.countdown);
         if(savedInstanceState != null){
             this.seconds = savedInstanceState.getInt("seconds");
@@ -36,11 +38,11 @@ public class Workout extends Activity {
             this.jumping = savedInstanceState.getBoolean("jumping");
             /*
             *   since oncreate method has been called newly so the image
-            *   is changing to the previous stage
+            *   is changing to their previous stage
             * */
             if(jumping == true){
                 workout.setImageResource(R.drawable.jumping);
-            }else{
+            }else if( jumping == false && FIRST_TIME_LAUNCHED == true){
                 workout.setImageResource(image[count]);
             }
         }
